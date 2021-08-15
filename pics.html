@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pics</title>
+    <link rel="stylesheet" href="pics.css">
+    <style>
+        img { 
+       width: 500px;
+       height: 500px;
+    }
+    </style>
+</head>
+<body>
+    <img src="levi.jpg" id="levi">
+    <img src="luffy.jpg" id="luffy" style="display: none;">
+    <img src="naruto.jpg" id="naruto" style="display: none;">
+<br>
+    <input type="button" value="levi" onclick="displaylevi()">
+
+    <input type="button" value="luffy" onclick="displayluffy()">
+
+    <input type="button" value="naruto" onclick="displaynaruto()">
+
+
+<script>
+var x = document.getElementById('levi')
+var y = document.getElementById('luffy')
+var z = document.getElementById('naruto')
+
+function displaylevi (){
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "none";
+}
+
+
+function displayluffy (){
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+}
+
+function displaynaruto (){
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+}
+</script>
+</body>
+</html>

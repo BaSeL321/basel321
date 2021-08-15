@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Convert from EGP to usd/euro</h1>
+    <input type="text" class="bas" id="value">
+    <select id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+    </select>
+    <input type="button" class="bas1" value="convert" onclick="convert()">
+    <br>
+    <input type="text" class="box" id="result" disabled="">
+    <script>
+        var x = document.getElementById('value')
+        var y = document.getElementById('currency')
+        var result = document.getElementById('result')
+        function convert() {
+             if 
+                 (y.value == 'USD') {
+                 
+            result.value = x.value * 3 + ' EGP';}
+    
+         else if(y.value == 'EUR'){
+            result.value = x.value * 16 + ' EGP'
+         }
+        }
+    
+    </script>
+    
+</body>
+</html>
